@@ -1,0 +1,20 @@
+*Pick And Place List
+*Company=
+*Author=
+*eMail=
+*
+*Project=Untitled Sketch 3
+*Date=10:30:46
+*CreatedBy=Fritzing 0.9.6b.2021-02-21.CD-175-0-8a1e0682
+*
+*
+*Coordinates in mm, always center of component
+*Origin 0/0=Lower left corner of PCB
+*Rotation in degree (0-360, math. pos.)
+*
+*No;Value;Package;X;Y;Rotation;Side;Name
+1;;;9.33428;-8.12921;0;Bottom;TXT1
+2;220;THT;52.016;-35.233;0;Bottom;Resistor
+3;;;9.66946;-14.8711;0;Bottom;IMG1
+4;0.030;3 mm [THT];22.2271;-35.2328;90;Bottom;LED on GPIO 18
+5;;;43.4529;-28.5151;0;Bottom;Raspberry Pi 1

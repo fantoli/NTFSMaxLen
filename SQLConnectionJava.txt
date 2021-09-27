@@ -1,0 +1,23 @@
+try {
+            Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");           
+            String url = "jdbc:sqlserver://localhost:1433;databaseName=testdb;user=sa;password=Inuyasha.96"; 
+            Connection con = DriverManager.getConnection(url);
+            String sql = "Select * from test where username=? and password = ?";
+            PreparedStatement pst = con.prepareStatement(sql);
+            pst.setString(1, txtUsername.getText());
+            pst.setString(2, txtPassword.getText());
+            ResultSet rs = pst.executeQuery();
+            if(rs.next()){
+            
+                JOptionPane.showMessageDialog(null, "Username and Password Matched");
+            }
+            else
+            {
+                JOptionPane.showMessageDialog(null, "Username and password not correct");
+                txtUsername.setText("");
+                txtPassword.setText("");
+            }
+            con.close();
+        } catch (Exception e) {
+            JOptionPane.showInternalMessageDialog(null, e);
+        }
